@@ -18,6 +18,7 @@ PRODUCT_BRAND := generic
 PRODUCT_DEVICE := generic
 PRODUCT_NAME := core
 
+# BEGIN privacy-added: PDroid
 PRODUCT_PACKAGES := \
     ApplicationsProvider \
     BackupRestoreConfirmation \
@@ -31,6 +32,7 @@ PRODUCT_PACKAGES := \
     Home \
     KeyChain \
     MediaProvider \
+    PDroid \
     PackageInstaller \
     PicoTts \
     SettingsProvider \
@@ -94,6 +96,7 @@ PRODUCT_PACKAGES := \
     libz \
     screencap \
     sensorservice
+# END privacy-added: PDroid
 
 # host-only dependencies
 ifeq ($(WITH_HOST_DALVIK),true)
